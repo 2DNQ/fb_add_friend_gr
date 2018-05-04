@@ -4,15 +4,8 @@
     <title>Add Friend</title>
 </head>
 <body>
-    <h4>Code để kết bạn với 1 nghìn thành viên nhóm</h4>
-    <form method="post">
-        <textarea cols="50" name="token" placeholder="Nhập token vào đây"></textarea><br>
-        <input type=”text” name="id_group" placeholder="Nhập ID nhóm">
-        <button name="ok">OK</button>
-    </form>
-</body>
-</html>
-<?php
+
+    <?php
 if(isset($_POST['ok'])){
     ini_set('max_execution_time', 0);
     $token    = $_POST['token'];
@@ -48,3 +41,12 @@ if(isset($_POST['ok'])){
         sleep(rand(2,10));
     }
 }
+    ?>
+    <h4>Code để kết bạn với 1 nghìn thành viên nhóm</h4>
+    <form method="post">
+        <textarea cols="50" name="token" placeholder="Nhập token vào đây"></textarea><br>
+        <input type=”text” name="id_group" placeholder="Nhập ID nhóm">
+        <button name="ok">OK</button>
+    </form>
+</body>
+</html>
